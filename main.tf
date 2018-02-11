@@ -11,14 +11,14 @@ provider "aws" {
 
 
 module "aws_vpc_a" "aws_region_a" {
-    source = "./aws_vpc"
+    source = "./terraform-aws-vpc"
     aws_region = "${var.aws_region_a}"
     aws_vpc_name = "${var.aws_vpc_region_a}"
     aws_vpc_cidr = "${var.aws_vpc_cidr_a}"
 }
 
 module "aws_vpc_b" "aws_region_b" {
-    source = "./aws_vpc"
+    source = "./terraform-aws-vpc"
     aws_region = "${var.aws_region_b}"
     aws_vpc_name = "${var.aws_vpc_region_b}"
     aws_vpc_cidr = "${var.aws_vpc_cidr_b}"
