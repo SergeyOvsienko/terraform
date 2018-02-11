@@ -29,6 +29,11 @@ You can edit variable file for change default values, or override variables in t
 
 # How to use
 
+Update submodules
+```sh
+git submodule update --init --recursive
+```
+
 Export enviroment variables with AWS credentials:
 ```sh
 export AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID
